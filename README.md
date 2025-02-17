@@ -42,9 +42,9 @@ Este repositorio se ha probado en GitHub Codespaces de dos maneras.
 
 ## Notas
 
-Al lanzar el contenedor, se ejecuta el comando `start-notebook.sh --NotebookApp.token=`, lo que hace que no se nos pida ningún token al entrar al servidor.
+Al lanzar el contenedor, se ejecuta el comando `start-notebook.sh`con el parámetro `--NotebookApp.token=`, lo que hace que no se nos pida ningún token al entrar al servidor.
 
-Si queremos modificar el directorio por defecto al arrancar podríamos modificar la opción `--ServerApp.root_dir=/home/jovyan/work`.
+Si queremos modificar el directorio por defecto al arrancar podríamos modificar la opción `--ServerApp.root_dir=/home/jovyan/work`. (en este caso coincide con el directorio mapeado)
 
 Si queremos abrir directamente JupyterLb desde Github es mejor usar el repositorio https://github.com/jmfdiazAL/codespaces-jupyter, generado a parttir de las plantillas de Github, y que no tiene ningún archivo de Docker aunque se pueden personalizar los paquetes necesarios editando el archivo `requirements.txt`.
 
