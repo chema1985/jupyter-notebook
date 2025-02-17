@@ -2,6 +2,7 @@ version: '3'
 services:
   jupyter:
     image: quay.io/jupyter/datascience-notebook
+    # image: quay.io/jupyter/scipy-notebook
     ports:
       - "8888:8888"
     volumes:

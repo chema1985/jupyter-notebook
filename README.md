@@ -48,6 +48,10 @@ Si queremos modificar el directorio por defecto al arrancar podríamos modificar
 
 Si queremos abrir directamente JupyterLab desde GitHub es mejor usar el repositorio https://github.com/jmfdiazAL/codespaces-jupyter, generado a parttir de las plantillas de GitHub, y que no tiene ningún archivo de Docker aunque se pueden personalizar los paquetes necesarios editando el archivo `requirements.txt`.
 
-Se ha usado por simplicidad la imagen mas reciente de [quay.io/jupyter/datascience-notebook][1] que ya trae la mayoría de los paquetes necesarios para el tratamiento de datos, incluidos R y Julia. Si queremos personalizar la imagen podemos crear una imagen personalizada añadiendo las dependencias en el archivo `requirements.txt` tal y como se hace en el repositorio https://github.com/nezhar/jupyter-docker-compose.
+Se ha usado por simplicidad la imagen mas reciente de [quay.io/jupyter/datascience-notebook][1] que ya trae la mayoría de los paquetes necesarios para el tratamiento de datos, incluidos R y Julia. Sin embargo, si sólo vamos a trabajar con Python, podemos usar la imagen [quay.io/jupyter/scipy-notebook][2] con un tamaño significativamente menor.
+
+Si queremos personalizar la imagen podemos crear una imagen personalizada añadiendo las dependencias en el archivo `requirements.txt` tal y como se hace en el repositorio https://github.com/nezhar/jupyter-docker-compose.
 
 [1]: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook
+
+[2]: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook
